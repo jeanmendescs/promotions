@@ -26,6 +26,10 @@ function Promotions({ isNewCustomer }: IPromotions) {
       .catch();
   }, [filterData, isNewCustomer]);
 
+  if (!promotions.length) {
+    return <span className="loader" />;
+  }
+
   return (
     <div className="promotions">
       {promotions.map((promotion) => {
