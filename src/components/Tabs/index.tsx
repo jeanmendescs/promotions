@@ -1,14 +1,10 @@
 import { useState } from "react";
-import "./styles.scss";
 
-interface ITabs {
-  tabs: string[];
-  currentTab: string;
-  children: React.ReactNode;
-}
+import Promotions from "../Promotions";
+import { ITabs } from "../../types/interfaces";
 
-function Tabs({ currentTab, tabs, children }: ITabs) {
-  const [activeTab, setActiveTab] = useState(() => currentTab);
+function Tabs({ tabs }: ITabs) {
+  const [activeTab, setActiveTab] = useState("All Promotions");
 
   return (
     <div className="tabs">
@@ -24,7 +20,7 @@ function Tabs({ currentTab, tabs, children }: ITabs) {
           </button>
         ))}
       </div>
-      {children}
+      <Promotions isNewCustomer={activeTab === "New Customers"} />
     </div>
   );
 }
