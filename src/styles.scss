@@ -16,6 +16,13 @@ p {
   font-family: Roboto, sans-serif;
 }
 
+button {
+  &:hover {
+    opacity: 0.8;
+    transition: background-color 0.5s ease;
+  }
+}
+
 .tabs {
   display: flex;
   flex-direction: column;
