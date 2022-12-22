@@ -54,5 +54,10 @@
     "eslint-plugin-react": "^7.31.11",
     "prettier": "^2.8.1",
     "sass": "^1.56.2"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(axios)/)"
+    ]
   }
 }
