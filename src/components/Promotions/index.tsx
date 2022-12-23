@@ -27,7 +27,7 @@ function Promotions({ isNewCustomer }: IPromotions) {
   }, [filterData, isNewCustomer]);
 
   if (!promotions.length) {
-    return <span className="loader" />;
+    return <span className="loader" data-testid="loader" />;
   }
 
   return (
