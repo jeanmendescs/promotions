@@ -9,7 +9,7 @@ function Tabs({ tabs }: ITabs) {
   return (
     <div className="tabs">
       <div className="tabs__container">
-        {tabs.map((tab) => (
+        {tabs?.map((tab) => (
           <button
             className={`tab ${activeTab === tab ? "tab--active" : ""}`}
             key={tab}

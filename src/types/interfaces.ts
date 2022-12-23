@@ -16,3 +16,8 @@ export interface IPromotionsData {
   joinNowButtonText: string;
   sequence: number;
 }
+
+export interface IGetPromotions {
+  id: string;
+  promotions: IPromotionsData[];
+}

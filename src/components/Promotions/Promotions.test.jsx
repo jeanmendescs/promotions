@@ -2,8 +2,9 @@ import { render, screen } from "@testing-library/react";
 
 import Promotions from "./index";
 import MOCK from "../../data/MOCK";
+import getPromotion from "../../utils/get-promotion";
 
-const getFirstProduct = MOCK.find((promotion) => promotion.id === "PROMO_1");
+const promotionOne = getPromotion("PROMO_1", MOCK);
 
 describe("Promotions", () => {
   it("should start without any promotions listed", async () => {
@@ -29,8 +30,8 @@ describe("Promotions", () => {
   it("should render a specific product", async () => {
     render(<Promotions />);
 
-    const image = await screen.findByAltText(getFirstProduct.name);
-    const title = await screen.findByText(getFirstProduct.name);
+    const image = await screen.findByAltText(promotionOne.name);
+    const title = await screen.findByText(promotionOne.name);
 
     expect(image).toBeInTheDocument();
     expect(title).toBeInTheDocument();
