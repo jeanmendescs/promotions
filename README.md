@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+## Promotions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This application aims to show a casino's promotions list according to the client. The data was fetched from the following API: http://www.mocky.io/v2/5bc3b9cc30000012007586b7
 
-## Available Scripts
+## Content Table
 
-In the project directory, you can run:
+- [Promotions](#promotions)
+- [Content Table](#content-table)
+- [Content](#content)
+- [Responsiveness](#responsiveness)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Status](#status)
+- [Contact](#contact)
 
-### `npm start`
+## Content
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application aims to show a casino's promotions list according to the client's category. There are two categories: new clients and all clients
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Responsiveness
 
-### `npm test`
+The layout was implemented focusing on a mobile-first approach. The current layout breakpoints were: less than 768px, bigger than 768px and less than 992px, and bigger than 992px. These breakpoints were extracted from Bootstrap.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![Example screenshot](https://imgur.com/fGRlEOZ.jpg)
+![Example screenshot](https://imgur.com/y5j4eeI.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- JavaScript
+- React Testing Library
+- SCSS
+- HTML
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `npm run eject`
+To run the application:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone the respository
+git clone https://github.com/jeanmendescs/promotions.git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Open the project's folder on your terminal
+$ cd promotions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install project's dependencies
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Start the application
+$ npm start
+```
 
-## Learn More
+## Status
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Finished.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contact
+
+<div style="display:flex">
+<a href="https://github.com/jeanmendescs">
+ <img height="auto" src="https://avatars3.githubusercontent.com/u/57002849?s=400&u=fff71a8a729144edec9bfd51b2d6dd89af52e00a&v=4" width="100px;" alt="Jean's Profile Picture"/>
+ <br />
+ <sub style="display:block; text-align:center;"><span >Jean Carlos</span></sub></a> <a href="https://github.com/jeanmendescs" title="Jean's Profile Picture"></a>
+</div>
+
+Feel free to be get in touch.
+
+<div style="display: inline-block;">
+<a href="https://www.linkedin.com/in/jean-mendes//"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" ></a>
+
+<a href="mailto:mendes.jean.cs@gmail.com"><img src="https://img.shields.io/badge/gmail-D14836?&style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" ></a>
+
+</div>
